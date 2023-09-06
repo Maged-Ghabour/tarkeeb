@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarkeeb</title>
+
+    <!--  Import Bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+
+    <!-- Import Swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <!-- Import FontAwsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Start Landing  -->
+    <div class="landing">
+      <div class="container-fluid">
+        <header>
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <img src="./imgs/logo.png" alt="Logo" />
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">الرئيسية</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">الخدمات</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">من نحن</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">طريقة الاستخدام</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> المدونة </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> انضم الينا </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> تواصل معنا </a>
+                  </li>
+                </ul>
+                <div
+                  class="d-flex align-items-center justify-content-center login"
+                >
+                  <a href=""
+                    ><i
+                      class="fa-solid fa-cart-shopping fa-flip-horizontal gradient-text mx-4"
+                    ></i
+                  ></a>
+                  <a class="btn btn-default" href="">تسجيل الدخول</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <div class="landing-content row d-flex justify-content-between">
+        <div class="img col">
+          <img src="./imgs/landing-img.png" alt="landing-img" />
+        </div>
+        <div class="content col">
+          <h1 class="gradient-text mb-5">
+            مرحبا بكم في خدمات تكييف الهواء الرائده لدينا !
+          </h1>
+          <div class="landing-form">
+            <h5 class="gradient-text text-center fw-semibold mb-4">
+              حدد موقعك الجغرافي واطلب خدمتك الان
+            </h5>
+            <form action="">
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="الخدمة" />
+              </div>
+              <div class="row mb-3">
+                <div class="col">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="المنطقة" selected>المنطقة</option>
+                    <option value="">المنصورة</option>
+                    <option value="">شها</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option value="المدينة" selected>المدينة</option>
+                    <option value="">المنصورة</option>
+                    <option value="">شها</option>
+                  </select>
+                </div>
+                <div class="col">
+                  <input
+                    type="date"
+                    class="form-control"
+                    placeholder="التاريخ"
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="reserve"
+                  />
+                  <label class="form-check-label" for="reserve">
+                    حجز خدمة VIP خارج اوقات العمل
+                  </label>
+                </div>
+              </div>
+
+              <div
+                class="mb-3 d-flex justify-content-center align-items-center"
+              >
+                <a class="btn btn-default px-5 py-2" href=""> بحث</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Landing  -->
+
+    <!-- Start Service Section  -->
+    <div class="services mt-5">
+      <div class="container-fluid">
+        <h3 class="gradient-text text-center fw-bold mb-5">خدماتنا</h3>
+
+        <div class="card-content">
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+          <div class="box p-3">
+            <div class="img-content"></div>
+            <h6>تركيب مكيف سبليت</h6>
+            <p>نظام تكييف هوائي مكون من وحدة داخلية ووحدة خارجية.</p>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Service Section  -->
+
+    <!-- Start Help Section -->
+    <div class="help my-5 fw-bold">
+      <div class="container-fluid">
+        <h3 class="gradient-text text-center fw-bold mb-5">
+          كيف يمكننا مساعدتك لتقديم افضل خدمة لك
+        </h3>
+
+        <div class="row">
+          <div
+            class="col-lg-6 d-flex justify-content-center align-items-center gap-3"
+          >
+            <div class="num">.01</div>
+            <div class="content">
+              <h5 class="mb-3">تصميم وتركيب أنظمة التكييف:</h5>
+              <p>
+                يقوم فريقنا المتخصص بتقديم خدمات التصميم والتركيب الشاملة لأنظمة
+                التكييف. سنقوم بتقييم احتياجاتكم وتوفير الحل الأمثل من حيث
+                النوعية والسعة والكفاءة لتلبية احتياجات التبريد والتدفئة الخاصة
+                بكم.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row">
+              <div
+                class="col-lg-12 d-flex justify-content-center align-items-center gap-3 mb-5"
+              >
+                <div class="num">.02</div>
+                <div class="content">
+                  <h5 class="mb-3">تصميم وتركيب أنظمة التكييف:</h5>
+                  <p>
+                    يقوم فريقنا المتخصص بتقديم خدمات التصميم والتركيب الشاملة
+                    لأنظمة التكييف. سنقوم بتقييم احتياجاتكم وتوفير الحل الأمثل
+                    من حيث النوعية والسعة والكفاءة لتلبية احتياجات التبريد
+                    والتدفئة الخاصة بكم.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-lg-12 d-flex justify-content-center align-items-center gap-3"
+              >
+                <div class="num">.03</div>
+                <div class="content">
+                  <h5 class="mb-3">تصميم وتركيب أنظمة التكييف:</h5>
+                  <p>
+                    يقوم فريقنا المتخصص بتقديم خدمات التصميم والتركيب الشاملة
+                    لأنظمة التكييف. سنقوم بتقييم احتياجاتكم وتوفير الحل الأمثل
+                    من حيث النوعية والسعة والكفاءة لتلبية احتياجات التبريد
+                    والتدفئة الخاصة بكم.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Help Section -->
+
+    <!-- Start  Technical Section  -->
+
+    <div class="container-fluid">
+      <div class="technical">
+        <div class="container-fluid swiper">
+          <div class="header gradient-text">
+            <h2 class="head gradient-text">الفنيين الأكثر تقييماً :</h2>
+          </div>
+          <div class="slide-container s1 content text-center mx-3">
+            <div class="swiper-wrapper card-wrapper py-2 pb-5">
+              <div class="swiper-slide card" style="width: 18rem">
+                <img src="./imgs/fani1.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">عمر احمد</h5>
+
+                  <p>
+                    <span class="star-rating">
+                      <label for="rate-1" style="--i: 1"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-1" value="1" />
+                      <label for="rate-2" style="--i: 2"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input
+                        type="radio"
+                        name="rating"
+                        id="rate-2"
+                        value="2"
+                        checked
+                      />
+                      <label for="rate-3" style="--i: 3"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-3" value="3" />
+                      <label for="rate-4" style="--i: 4"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-4" value="4" />
+                      <label for="rate-5" style="--i: 5"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-5" value="5" />
+                    </span>
+                  </p>
+
+                  <p class="card-text">
+                    <i class="fa-solid fa-bag-shopping fa-lg me-1"></i>
+                    10 سنوات خبرة
+                  </p>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot fa-lg me-1"></i>
+                    الرياض _ الدوحة
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <a href="#" class="btn btn-default w-100">اطلب الخدمة</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide card" style="width: 18rem">
+                <img src="./imgs/fani2.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">عمر احمد</h5>
+
+                  <p>
+                    <span class="star-rating">
+                      <label for="rate-1" style="--i: 1"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-1" value="1" />
+                      <label for="rate-2" style="--i: 2"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input
+                        type="radio"
+                        name="rating"
+                        id="rate-2"
+                        value="2"
+                        checked
+                      />
+                      <label for="rate-3" style="--i: 3"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-3" value="3" />
+                      <label for="rate-4" style="--i: 4"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-4" value="4" />
+                      <label for="rate-5" style="--i: 5"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-5" value="5" />
+                    </span>
+                  </p>
+
+                  <p class="card-text">
+                    <i class="fa-solid fa-bag-shopping fa-lg me-1"></i>
+                    10 سنوات خبرة
+                  </p>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot fa-lg me-1"></i>
+                    الرياض _ الدوحة
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <a href="#" class="btn btn-default w-100">اطلب الخدمة</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide card" style="width: 18rem">
+                <img src="./imgs/fani3.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">عمر احمد</h5>
+
+                  <p>
+                    <span class="star-rating">
+                      <label for="rate-1" style="--i: 1"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-1" value="1" />
+                      <label for="rate-2" style="--i: 2"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input
+                        type="radio"
+                        name="rating"
+                        id="rate-2"
+                        value="2"
+                        checked
+                      />
+                      <label for="rate-3" style="--i: 3"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-3" value="3" />
+                      <label for="rate-4" style="--i: 4"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-4" value="4" />
+                      <label for="rate-5" style="--i: 5"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-5" value="5" />
+                    </span>
+                  </p>
+
+                  <p class="card-text">
+                    <i class="fa-solid fa-bag-shopping fa-lg me-1"></i>
+                    10 سنوات خبرة
+                  </p>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot fa-lg me-1"></i>
+                    الرياض _ الدوحة
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <a href="#" class="btn btn-default w-100">اطلب الخدمة</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide card" style="width: 18rem">
+                <img src="./imgs/fani4.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">عمر احمد</h5>
+
+                  <p>
+                    <span class="star-rating">
+                      <label for="rate-1" style="--i: 1"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-1" value="1" />
+                      <label for="rate-2" style="--i: 2"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input
+                        type="radio"
+                        name="rating"
+                        id="rate-2"
+                        value="2"
+                        checked
+                      />
+                      <label for="rate-3" style="--i: 3"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-3" value="3" />
+                      <label for="rate-4" style="--i: 4"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-4" value="4" />
+                      <label for="rate-5" style="--i: 5"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-5" value="5" />
+                    </span>
+                  </p>
+
+                  <p class="card-text">
+                    <i class="fa-solid fa-bag-shopping fa-lg me-1"></i>
+                    10 سنوات خبرة
+                  </p>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot fa-lg me-1"></i>
+                    الرياض _ الدوحة
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <a href="#" class="btn btn-default w-100">اطلب الخدمة</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide card" style="width: 18rem">
+                <img src="./imgs/fani5.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title mb-3">عمر احمد</h5>
+
+                  <p>
+                    <span class="star-rating">
+                      <label for="rate-1" style="--i: 1"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-1" value="1" />
+                      <label for="rate-2" style="--i: 2"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input
+                        type="radio"
+                        name="rating"
+                        id="rate-2"
+                        value="2"
+                        checked
+                      />
+                      <label for="rate-3" style="--i: 3"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-3" value="3" />
+                      <label for="rate-4" style="--i: 4"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-4" value="4" />
+                      <label for="rate-5" style="--i: 5"
+                        ><i class="fa-solid fa-star"></i
+                      ></label>
+                      <input type="radio" name="rating" id="rate-5" value="5" />
+                    </span>
+                  </p>
+
+                  <p class="card-text">
+                    <i class="fa-solid fa-bag-shopping fa-lg me-1"></i>
+                    10 سنوات خبرة
+                  </p>
+                  <p class="card-text">
+                    <i class="fa-solid fa-location-dot fa-lg me-1"></i>
+                    الرياض _ الدوحة
+                  </p>
+                </div>
+                <div class="card-foot">
+                  <a href="#" class="btn btn-default w-100">اطلب الخدمة</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swipper Arrows  -->
+          <div
+            class="swiper-button-next swiper-navBtn swiper-button-next1"
+          ></div>
+          <div
+            class="swiper-button-prev swiper-navBtn swiper-button-prev1"
+          ></div>
+          <div class="swiper-pagination swiper-pagination1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End  Technical Section  -->
+
+    <!-- Start About Section  -->
+    <div class="about my-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6">
+            <h2 class="head gradient-text mb-4 fw-semibold">من نحن</h2>
+            <ul>
+              <li>
+                <p class="fw-semibold">
+                  تميز شركتنا بالاهتمام الشديد بالتفاصيل والجودة :
+                  <span class="fw-normal"
+                    >نحن نضمن أن نظم التكييف التي نثبتها تعمل بكفاءة وتلبي
+                    احتياجاتك بالضبط</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="fw-semibold">
+                  فريقنا مكون من خبراء مدربين تدريبًا عاليًا في مجال التكييف
+                  والتبريد :
+                  <span class="fw-normal"
+                    >نحن نستخدم مواد ومعدات عالية الجودة لضمان استدامة وأداء
+                    ممتاز لأنظمة التكييف التي نثبتها.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="fw-semibold">
+                  نحن نقدم خدمات شاملة بدءًا من التشخيص والتصميم والتركيب،
+                  وصيانة وإصلاح أنظمة التكييف :
+                  <span class="fw-normal">
+                    نحن نعمل على تقديم حلول مخصصة تناسب متطلباتك الخاصة وتلبي
+                    توقعاتك.
+                  </span>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="about-image col-6">
+            <img class="img-fluid" src="./imgs/about.png" alt="about" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About Section  -->
+
+    <!-- Start Why US -->
+    <div class="why-us my-5">
+      <div class="container-fluid">
+        <h2 class="head gradient-text text-center fw-semibold mb-3">
+          لماذا نحن ؟
+        </h2>
+
+        <div class="row">
+          <div class="content-wrapper col-4">
+            <div class="content">
+              <div class="content-head">
+                <i class="fa-solid fa-shield fa-lg"></i>
+                <h5 class="gradient-text fw-semibold">الجودة والموثوقية:</h5>
+              </div>
+              <div class="content-body">
+                <p>
+                  نستخدم مواد ذات جودة عالية ونعتمد على فريق فني محترف ومدرب
+                  لضمان أنظمة التكييف ذات الأداء المتفوق والموثوقية العالية.
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="content-head">
+                <i class="fa-solid fa-award fa-lg"></i>
+                <h5 class="gradient-text fw-semibold">الضمان والصيانة:</h5>
+              </div>
+              <div class="content-body">
+                <p>
+                  نحن نقدم ضمانًا على خدماتنا والمعدات المثبتة. كما نوفر خدمات
+                  صيانة دورية للحفاظ على أنظمة التكييف في حالة ممتازة على المدى
+                  الطويل. هذا يعطي العملاء الثقة في جودة الخدمات والدعم المستمر
+                  الذي نقدمه.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="content-image col-4">
+            <img src="./imgs/about1.png" alt="" />
+          </div>
+          <div class="content-wrapper col-4">
+            <div class="content">
+              <div class="content-head">
+                <i class="fa-solid fa-shield fa-lg"></i>
+                <h5 class="gradient-text fw-semibold">
+                  نقدم خدمات متخصصة ومخصصة:
+                </h5>
+              </div>
+              <div class="content-body">
+                <p>
+                  نحن نفهم احتياجات العملاء بدقة ونوفر الحلول المثلى التي تتناسب
+                  مع مساحاتهم ومتطلباتهم الفردية.
+                </p>
+              </div>
+            </div>
+            <div class="content">
+              <div class="content-head">
+                <i class="fa-solid fa-award fa-lg"></i>
+                <h5 class="gradient-text fw-semibold">
+                  التزام بالمواعيد والموثوقية:
+                </h5>
+              </div>
+              <div class="content-body">
+                <p>
+                  نحن نلتزم بتقديم خدماتنا في الوقت المحدد وبالموثوقية التامة.
+                  نحن ندرك أهمية الوقت لعملائنا ونلتزم بأن نكون دقيقين وموثوقين
+                  في جميع المواعيد والمواعدًا على العملاء هو لتلبية احتياجاتهم
+                  بشكل كامل.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Why US  -->
+
+    <!-- Start Join US  -->
+    <div class="join-us container">
+      <div class="">
+        <div class="row">
+          <div class="row">
+            <div class="col">
+              <h3 class="mb-3">انضم الينا الان !</h3>
+              <p class="mb-5">
+                نحن ندعوك لتكون جزءًا من موقعنا والاشتراك فيه للاستفادة من فرصة
+                مميزة للتعاون وتحقيق نجاح متبادل , اذا كنت تريد ان تكون جزء من
+                تكييف انضم الينا الان , للمزيد من المعلومات ولمناقشة كيفية
+                الاشتراك والتعاون، يرجى التواصل معنا عبر الوسائل المتاحة. نحن في
+                انتظاركم لبدء رحلة نجاح مشتركة في مجال خدمات التكييف.
+              </p>
+              <form action="">
+                <div class="mb-3">
+                  <label for="name" class="form-label">
+                    ادخل اسم المؤسسة
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="ادخل اسم المؤسسة"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">
+                    الايميل الالكتروني
+                  </label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="الايميل الالكتروني"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="url" class="form-label"> رابط الموقع </label>
+                  <input
+                    type="url"
+                    class="form-control"
+                    id="email"
+                    placeholder="رابط الموقع"
+                    dir="rtl"
+                  />
+                </div>
+
+                <div class="my-3 btn btn-send w-100">
+                  <a href="" class="w-100 gradient-text fw-bold"> ارسال </a>
+                </div>
+              </form>
+            </div>
+            <div class="img-content col">
+              <img src="./imgs/join-us.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Join US  -->
+
+    <!-- Start Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-6 w-50 d-flex justify-content-center align-items-start flex-column"
+          >
+            <img src="./imgs/logo1.png" alt="logo" />
+            <hr class="w-50" />
+            <div class="links">
+              <a href=""><i class="fa-brands fa-facebook-f fa-xl mx-2"></i></a>
+              <a href=""> <i class="fa-brands fa-twitter fa-xl mx-2"></i> </a>
+              <a href=""><i class="fa-brands fa-linkedin-in fa-xl mx-2"></i></a>
+              <a href=""><i class="fa-brands fa-instagram fa-xl mx-2"></i></a>
+            </div>
+          </div>
+          <div class="col-2">
+            <h6>روابط مهمة</h6>
+            <ul>
+              <li><a href="">من نحن</a></li>
+
+              <li><a href="">سياسة الخصوصية</a></li>
+              <li><a href="">شروط الاستخدام</a></li>
+              <li><a href="">سياسة الاستبدال</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h6>عن الشركة</h6>
+            <ul>
+              <li><a href="">عن الشركة</a></li>
+              <li><a href="">مسؤوليتنا</a></li>
+              <li><a href="">الفروع</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h6>المساعدة</h6>
+            <ul>
+              <li><a href="">طريقة الاستخدام</a></li>
+              <li><a href="">اتصل بنا</a></li>
+              <li><a href="">انضم الينا</a></li>
+              <li><a href="">الشكاوي والاستفسارات</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <!-- Import Bootstrap -->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swipper.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
