@@ -6,6 +6,7 @@
 :root {
   --main-color: #2b4560;
   --background: -webkit-linear-gradient(180deg, #2b4560, #009ecf);
+  --background-hover: -webkit-linear-gradient(180deg, #009ecf, #2b4560);
   --swiper-theme-color: #2b4560;
 }
 
@@ -35,13 +36,31 @@ ul li a {
 }
 
 .btn-default {
+  position: relative;
   background: var(--background);
   border: none;
   outline: none;
   color: #fff;
   border-radius: 3px;
+  z-index: 1;
 }
 
+.btn-default::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--background-hover);
+  z-index: -1;
+  transition: opacity 0.5s linear;
+  border-radius: 3px;
+  opacity: 0;
+}
+.btn-default:hover::before {
+  opacity: 1;
+}
 .btn-default:hover {
   color: #fff;
 }
@@ -51,7 +70,7 @@ ul li a {
 /* Start Nav*/
 
 .landing {
-  background: url("../imgs/overlay.png");
+  background: url("../imgs/overlay1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -85,6 +104,30 @@ ul li a {
   --bs-gutter-x: 0rem;
   overflow: hidden;
 }
+
+.landing .img-content {
+  background: url("../imgs/landing-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+@media (max-width: 991.98px) {
+  .landing .img-content {
+    background: url("../imgs/landing2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 80vh;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+}
+
 .landing .landing-content img {
   min-height: 100vh;
   object-fit: cover;
@@ -92,6 +135,12 @@ ul li a {
 
 .landing .landing-content .content {
   padding: 0 7rem;
+}
+
+@media (max-width: 991.98px) {
+  .landing .landing-content .content {
+    padding: 0 1rem;
+  }
 }
 
 .landing .landing-content h1 {
@@ -132,12 +181,12 @@ ul li a {
 .card-content {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-  gap: 40px;
+  gap: 1rem;
 }
 
 @media (max-width: 992px) {
   .card-content {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
 }
 
@@ -310,6 +359,20 @@ ul li a {
   height: 100%;
   padding: 0;
 }
+
+@media (max-width: 991.98px) {
+  .about .about-image {
+    position: relative;
+
+    text-align: center;
+  }
+  .about .about-image img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 50%;
+  }
+}
 /* End About Section  */
 
 /*  Start Why US */
@@ -401,6 +464,7 @@ input[type="email"]::placeholder {
 input[type="url"]::placeholder {
   text-align: right;
 }
+
 /* End Join Us */
 
 /* Start Footer Section   */
@@ -435,6 +499,24 @@ footer ul li a {
 }
 footer ul li a:hover {
   color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  footer .row .link ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  footer .logo-link {
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  footer .row h6 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
 
 /* End Footer Section   */

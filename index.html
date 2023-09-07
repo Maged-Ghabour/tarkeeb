@@ -86,7 +86,7 @@
 
       <div class="landing-content row d-flex justify-content-between">
         <div class="img col">
-          <img src="./imgs/landing-img.png" alt="landing-img" />
+          <div class="img-content"></div>
         </div>
         <div class="content col">
           <h1 class="gradient-text mb-5">
@@ -101,7 +101,7 @@
                 <input type="text" class="form-control" placeholder="الخدمة" />
               </div>
               <div class="row mb-3">
-                <div class="col">
+                <div class="col mb-3">
                   <select
                     class="form-select"
                     aria-label="Default select example"
@@ -111,7 +111,7 @@
                     <option value="">شها</option>
                   </select>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                   <select
                     class="form-select"
                     aria-label="Default select example"
@@ -121,7 +121,7 @@
                     <option value="">شها</option>
                   </select>
                 </div>
-                <div class="col">
+                <div class="col mb-3">
                   <input
                     type="date"
                     class="form-control"
@@ -554,7 +554,7 @@
     <div class="about my-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6">
+          <div class="col col-12 order-2 col-md-6">
             <h2 class="head gradient-text mb-4 fw-semibold">من نحن</h2>
             <ul>
               <li>
@@ -588,7 +588,7 @@
               </li>
             </ul>
           </div>
-          <div class="about-image col-6">
+          <div class="about-image col col-12 order-1 col-md-6">
             <img class="img-fluid" src="./imgs/about.png" alt="about" />
           </div>
         </div>
@@ -604,7 +604,7 @@
         </h2>
 
         <div class="row">
-          <div class="content-wrapper col-4">
+          <div class="content-wrapper col col-12 col-md-4 order-2 order-md-1">
             <div class="content">
               <div class="content-head">
                 <i class="fa-solid fa-shield fa-lg"></i>
@@ -632,10 +632,10 @@
               </div>
             </div>
           </div>
-          <div class="content-image col-4">
-            <img src="./imgs/about1.png" alt="" />
+          <div class="content-image col col-12 col-md-4 order-1 order-md-2">
+            <img class="img-fluid" src="./imgs/about1.png" alt="" />
           </div>
-          <div class="content-wrapper col-4">
+          <div class="content-wrapper col-12 col-md-4 order-3 order-md-3">
             <div class="content">
               <div class="content-head">
                 <i class="fa-solid fa-shield fa-lg"></i>
@@ -726,7 +726,7 @@
                 </div>
               </form>
             </div>
-            <div class="img-content col">
+            <div class="img-content col d-none d-md-block">
               <img src="./imgs/join-us.png" alt="" />
             </div>
           </div>
@@ -738,9 +738,9 @@
     <!-- Start Footer Section -->
     <footer>
       <div class="container">
-        <div class="row">
+        <div class="row d-flex justify-content-center align-content-center">
           <div
-            class="col-6 w-50 d-flex justify-content-center align-items-start flex-column"
+            class="logo-link col-12 col-md-6 col-lg-6 w-50 d-flex justify-content-center align-items-center flex-column"
           >
             <img src="./imgs/logo1.png" alt="logo" />
             <hr class="w-50" />
@@ -751,7 +751,7 @@
               <a href=""><i class="fa-brands fa-instagram fa-xl mx-2"></i></a>
             </div>
           </div>
-          <div class="col-2">
+          <div class="link col-12 col-md-6 col-lg-2">
             <h6>روابط مهمة</h6>
             <ul>
               <li><a href="">من نحن</a></li>
@@ -761,7 +761,7 @@
               <li><a href="">سياسة الاستبدال</a></li>
             </ul>
           </div>
-          <div class="col-2">
+          <div class="link col-12 col-md-6 col-lg-2">
             <h6>عن الشركة</h6>
             <ul>
               <li><a href="">عن الشركة</a></li>
@@ -769,7 +769,7 @@
               <li><a href="">الفروع</a></li>
             </ul>
           </div>
-          <div class="col-2">
+          <div class="link col-12 col-md-6 col-lg-2">
             <h6>المساعدة</h6>
             <ul>
               <li><a href="">طريقة الاستخدام</a></li>
