@@ -425,11 +425,16 @@ ul li a {
 /* Start Join Us */
 
 .join-us {
-  background: var(--background);
   color: #fff;
   padding: 3rem 2rem;
   border-radius: 5px;
 }
+.join-us .container-fluid {
+  background: var(--background);
+  padding: 4rem;
+  border-radius: 7px;
+}
+
 .join-us p {
   color: rgb(239, 239, 239, 75%);
 }
