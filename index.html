@@ -32,7 +32,13 @@
         <header>
           <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <img src="./imgs/logo.png" alt="Logo" />
+              <img class="order-1 logo" src="./imgs/logo100.png" alt="Logo" />
+              <img
+                class="order-2 order-lg-4 mx-2"
+                src="./imgs/profile.png"
+                alt=""
+              />
+
               <button
                 class="navbar-toggler"
                 type="button"
@@ -44,7 +50,10 @@
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div
+                class="order-3 collapse navbar-collapse"
+                id="navbarSupportedContent"
+              >
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link" href="#">الرئيسية</a>
@@ -68,10 +77,8 @@
                     <a class="nav-link" href="#"> تواصل معنا </a>
                   </li>
                 </ul>
-                <div
-                  class="d-flex align-items-center justify-content-center login"
-                >
-                  <a href=""
+                <div class="d-flex align-items-center login">
+                  <a href="./cart.html"
                     ><i
                       class="fa-solid fa-cart-shopping fa-flip-horizontal gradient-text mx-4"
                     ></i
@@ -85,10 +92,10 @@
       </div>
 
       <div class="landing-content row d-flex justify-content-between">
-        <div class="img col">
+        <div class="img col col-sm-12 col-md-6">
           <div class="img-content"></div>
         </div>
-        <div class="content col">
+        <div class="content col col-sm-12 col-md-6">
           <h1 class="gradient-text mb-5">
             مرحبا بكم في خدمات تكييف الهواء الرائده لدينا !
           </h1>
@@ -123,6 +130,7 @@
                 </div>
                 <div class="col mb-3">
                   <input
+                    required
                     type="date"
                     class="form-control"
                     placeholder="التاريخ"
@@ -554,11 +562,11 @@
     <div class="about my-5">
       <div class="container-fluid">
         <div class="row">
-          <div class="col col-12 order-2 col-md-6">
+          <div class="about-content col col-12 order-2 col-xl-8">
             <h2 class="head gradient-text mb-4 fw-semibold">من نحن</h2>
             <ul>
               <li>
-                <p class="fw-semibold">
+                <p class="fw-semibold fs-5">
                   تميز شركتنا بالاهتمام الشديد بالتفاصيل والجودة :
                   <span class="fw-normal"
                     >نحن نضمن أن نظم التكييف التي نثبتها تعمل بكفاءة وتلبي
@@ -567,7 +575,7 @@
                 </p>
               </li>
               <li>
-                <p class="fw-semibold">
+                <p class="fw-semibold fs-5">
                   فريقنا مكون من خبراء مدربين تدريبًا عاليًا في مجال التكييف
                   والتبريد :
                   <span class="fw-normal"
@@ -577,7 +585,7 @@
                 </p>
               </li>
               <li>
-                <p class="fw-semibold">
+                <p class="fw-semibold fs-5">
                   نحن نقدم خدمات شاملة بدءًا من التشخيص والتصميم والتركيب،
                   وصيانة وإصلاح أنظمة التكييف :
                   <span class="fw-normal">
@@ -588,7 +596,7 @@
               </li>
             </ul>
           </div>
-          <div class="about-image col col-12 order-1 col-md-6">
+          <div class="about-image col col-12 order-1 col-xl-4">
             <img class="img-fluid" src="./imgs/about.png" alt="about" />
           </div>
         </div>
@@ -665,7 +673,9 @@
           <div class="content-wrapper col col-12 col-md-4 order-2 order-md-1">
             <div class="content">
               <div class="content-head">
-                <i class="fa-solid fa-shield fa-lg"></i>
+                <!-- <i class="fa-solid fa-shield fa-lg"></i> -->
+                <img class="me-2" src="./imgs/icon1.svg" alt="" />
+
                 <h5 class="gradient-text fw-semibold">الجودة والموثوقية:</h5>
               </div>
               <div class="content-body">
@@ -677,7 +687,9 @@
             </div>
             <div class="content">
               <div class="content-head">
-                <i class="fa-solid fa-award fa-lg"></i>
+                <!-- <i class="fa-solid fa-award fa-lg"></i> -->
+                <img class="me-2" src="./imgs/icon2.svg" alt="" />
+
                 <h5 class="gradient-text fw-semibold">الضمان والصيانة:</h5>
               </div>
               <div class="content-body">
@@ -696,7 +708,9 @@
           <div class="content-wrapper col-12 col-md-4 order-3 order-md-3">
             <div class="content">
               <div class="content-head">
-                <i class="fa-solid fa-shield fa-lg"></i>
+                <img class="me-2" src="./imgs/icon3.svg" alt="" />
+
+                <!-- <i class="fa-solid fa-shield fa-lg"></i> -->
                 <h5 class="gradient-text fw-semibold">
                   نقدم خدمات متخصصة ومخصصة:
                 </h5>
@@ -710,7 +724,8 @@
             </div>
             <div class="content">
               <div class="content-head">
-                <i class="fa-solid fa-award fa-lg"></i>
+                <!-- <i class="fa-solid fa-award fa-lg"></i> -->
+                <img class="me-2" src="./imgs/icon4.svg" alt="" />
                 <h5 class="gradient-text fw-semibold">
                   التزام بالمواعيد والموثوقية:
                 </h5>

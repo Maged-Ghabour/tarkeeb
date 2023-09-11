@@ -76,6 +76,12 @@ ul li a {
   background-size: cover;
 }
 
+@media (max-width: 575.98px) {
+  .landing .logo {
+    width: 75px;
+  }
+}
+
 .landing nav .navbar-nav li a {
   font-size: 1.2rem;
   color: var(--main-color);
@@ -100,7 +106,7 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+
   --bs-gutter-x: 0rem;
   overflow: hidden;
 }
@@ -115,14 +121,14 @@ ul li a {
   aspect-ratio: 1/1;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 768px) {
   .landing .img-content {
     background: url("../imgs/landing2.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
     width: 100%;
-    min-height: 80vh;
+    min-height: 50vh;
     object-fit: cover;
     aspect-ratio: 1/1;
   }
@@ -137,7 +143,14 @@ ul li a {
   padding: 0 7rem;
 }
 
-@media (max-width: 991.98px) {
+@media (min-width: 992px) and (max-width: 1300px){
+.landing nav .navbar-nav li a {
+  font-size: .7rem;
+  margin: 0.4rem;
+}
+}
+
+@media (max-width: 1600px) {
   .landing .landing-content .content {
     padding: 0 1rem;
   }
@@ -174,6 +187,18 @@ ul li a {
 .landing .content .form-check-label {
   color: #7b7b7b;
 }
+
+
+
+button.navbar-toggler{
+  border: none;
+  outline: none;
+}
+button.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+
 
 /* End Landing */
 .services {
@@ -345,10 +370,25 @@ ul li a {
 .about ul {
   padding: 0 3rem;
 }
+@media (max-width: 575.98px) {
+  .about ul {
+    padding: 0 1rem;
+  }
+}
 
 .about ul li {
   list-style-type: disc;
   margin-bottom: 2rem;
+}
+.about ul li p {
+  color: var(--main-color);
+  line-height: 2.5rem;
+}
+
+@media (max-width: 575.98px) {
+  .about ul li p {
+    line-height: 1.7rem;
+  }
 }
 
 .about .about-image {
@@ -358,6 +398,15 @@ ul li a {
   text-align: left;
   height: 100%;
   padding: 0;
+}
+.about .about-content {
+  padding: 3rem;
+}
+
+@media (max-width: 575.98px) {
+  .about .about-content {
+    padding: 1rem;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -394,6 +443,7 @@ ul li a {
 }
 .why-us .content .content-head i {
   color: var(--main-color);
+
   width: 25px;
   height: 25px;
   border: 1px solid var(--main-color);
@@ -401,8 +451,14 @@ ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   margin-left: 0.5rem;
+  font-size: 1.7rem;
+}
+@media (max-width: 575.98px) {
+  .why-us .content .content-head i {
+    padding: 1rem;
+  }
 }
 .why-us .content .content-head h5 {
   margin-bottom: 0;
@@ -435,6 +491,15 @@ ul li a {
   border-radius: 7px;
 }
 
+@media (max-width: 575.98px) {
+  .join-us {
+    padding: 2rem 1rem;
+  }
+  .join-us .container-fluid {
+    padding: 2rem;
+  }
+}
+
 .join-us p {
   color: rgb(239, 239, 239, 75%);
 }
@@ -443,6 +508,20 @@ ul li a {
 .join-us .btn-send:hover {
   background-color: #fff;
   color: var(--main-color);
+}
+.join-us form {
+  width: 70%;
+}
+
+@media (max-width: 575.98px) {
+  .join-us form {
+    width: 100%;
+  }
+}
+.join-us form input,
+.join-us form input:focus {
+  color: #fff;
+  background-color: initial;
 }
 
 .join-us .btn-send a {
@@ -543,5 +622,26 @@ footer ul li a:hover {
   justify-content: center;
   align-items: center;
   font-size: 1rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.technical:hover .swiper-button-next {
+  visibility: visible;
+}
+
+.technical:hover .swiper-button-prev {
+  visibility: visible;
+}
+
+@media (max-width: 575.98px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
 }
 /* End Swipper  */

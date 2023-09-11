@@ -1,3 +1,7 @@
+// $(".date").datepicker({
+//   format: "التاريخ",
+// });
+
 /* Swipper  */
 var s1 = new Swiper(".s1", {
   slidesPerView: 6,
@@ -6,7 +10,7 @@ var s1 = new Swiper(".s1", {
   loop: true,
   centerSlide: "true",
   fade: "true",
-  
+
   pagination: {
     el: ".swiper-pagination1",
     clickable: true,
@@ -38,3 +42,14 @@ var s1 = new Swiper(".s1", {
     },
   },
 });
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <!--  Import Bootstrap  -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css" />
+    <!-- Import FontAwsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/cart.css" />
+  </head>
+  <body>
+    <div class="cart mt-5">
+      <div class="container-fluid">
+        <h4>سلة التسوق <span class="serviceCount">(5 خدمات ) </span></h4>
+
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="card">
+              <div class="card-body table">
+                <table>
+                  <thead>
+                    <td>الخدمة</td>
+                    <td>السعر</td>
+                    <td>الكمية</td>
+                    <td>الإجمالي</td>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="service">
+                        <img src="./imgs/cart1.png" alt="" />
+                        <span>تركيب مكيف سبليت</span>
+                      </td>
+                      <td>100 ر.س</td>
+                      <td>
+                        <span class="increment">
+                          <i
+                            id="number"
+                            class="fa-solid fa-plus fa-xs"
+                            style="color: #ffffff"
+                          ></i>
+                        </span>
+                        <span class="count">0</span>
+                        <span class="decrement"
+                          ><i class="fa-solid fa-minus fa-xs"></i
+                        ></span>
+                      </td>
+
+                      <td>
+                        <div class="total">
+                          <span class="price">100 ر.س</span>
+                          <i class="fa-regular fa-trash-can fa-lg"></i>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="service">
+                        <img src="./imgs/cart1.png" alt="" />
+                        <span>تركيب مكيف سبليت</span>
+                      </td>
+                      <td>100 ر.س</td>
+                      <td>
+                        <span class="increment">
+                          <i
+                            class="fa-solid fa-plus fa-xs"
+                            style="color: #ffffff"
+                          ></i>
+                        </span>
+                        <span class="count">0</span>
+                        <span class="decrement"
+                          ><i class="fa-solid fa-minus fa-xs"></i
+                        ></span>
+                      </td>
+
+                      <td>
+                        <div class="total">
+                          <span class="price">100 ر.س</span>
+                          <i class="fa-regular fa-trash-can fa-lg"></i>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="service">
+                        <img src="./imgs/cart1.png" alt="" />
+                        <span>تركيب مكيف سبليت</span>
+                      </td>
+                      <td>100 ر.س</td>
+                      <td>
+                        <span class="increment">
+                          <i
+                            class="fa-solid fa-plus fa-xs"
+                            style="color: #ffffff"
+                          ></i>
+                        </span>
+                        <span class="count">0</span>
+                        <span class="decrement"
+                          ><i class="fa-solid fa-minus fa-xs"></i
+                        ></span>
+                      </td>
+
+                      <td>
+                        <div class="total">
+                          <span class="price">100 ر.س</span>
+                          <i class="fa-regular fa-trash-can fa-lg"></i>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 order">
+            <h5>ملخص الطلب</h5>
+            <div class="qty">
+              <span>الكمية</span>
+              <span>4</span>
+            </div>
+            <div class="tax">
+              <span>ضريبة القيمة المضافة</span>
+              <span>120 ر.س</span>
+            </div>
+            <div class="delivary">
+              <span>التوصيل </span>
+              <span>120 ر.س</span>
+            </div>
+            <div class="total">
+              <span>الإجمالي</span>
+              <span>350 ر.س</span>
+            </div>
+
+            <div class="btn-default">دفع</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/cart.js"></script>
+  </body>
+</html>

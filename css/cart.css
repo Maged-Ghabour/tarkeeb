@@ -1,0 +1,134 @@
+.cart h4 {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.cart .serviceCount {
+  color: rgba(0, 0, 0, 50%);
+  font-size: 0.9rem;
+}
+
+.cart .card {
+  border: 1px solid rgb(0, 0, 0, 5%);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 5%);
+}
+
+.cart table {
+  width: 100%;
+}
+.cart table thead td {
+  color: rgba(0, 0, 0, 50%);
+  padding: 0.5rem 0;
+}
+.cart table tr {
+  border-color: #30303033;
+}
+.cart table tbody tr:last-child {
+  border: none;
+}
+
+.cart table tbody td {
+  padding: 0.5rem 0;
+}
+
+img {
+  padding-left: 1rem;
+}
+
+.cart .card-body .increment {
+  background: var(--background);
+  padding: 2px;
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart .card-body .decrement {
+  border: 1px solid transparent;
+  border-color: var(--background);
+  padding: 2px;
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart table tbody td span {
+  color: var(--main-color);
+  font-weight: 500;
+}
+
+.cart .order {
+  background-color: rgb(0, 158, 207, 5%);
+  padding: 1rem;
+}
+
+.cart .card-body .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart .card-body .fa-trash-can {
+  color: #ada7a7;
+}
+.cart .card-body .fa-trash-can:hover {
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.cart .order {
+  padding: 1rem 2rem;
+}
+
+.cart .order h5 {
+  color: var(--main-color);
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #30303033;
+}
+.cart .order .qty,
+.cart .order .tax,
+.cart .order .delivary,
+.cart .order .total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.cart .order .qty span:first-child,
+.cart .order .tax span:first-child,
+.cart .order .delivary span:first-child {
+  color: rgb(0, 0, 0, 50%);
+}
+
+.cart .order .qty span:last-child,
+.cart .order .tax span:last-child,
+.cart .order .delivary span:last-child {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.cart .order .total {
+  color: var(--main-color);
+  font-size: 1.3rem;
+}
+
+.cart .order .total {
+  border-top: 1px solid #30303033;
+  margin-bottom: 2rem;
+}
+
+.btn-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  padding: 0 3rem;
+  cursor: pointer;
+}
